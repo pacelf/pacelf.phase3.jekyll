@@ -9,8 +9,8 @@ jkan_theme: United # this doesn't seem to activate the United Bootswatch theme s
 
 
 # Authentication
-github_client_id: 6c1c1a58372f6bd3e384 
-gatekeeper_host: https://pacelf-authorization-server.herokuapp.com/
+github_client_id: a3459f05502c1381d12a
+gatekeeper_host: https://pacelf-login-server.herokuapp.com/
 
 # Dataset schema
 schema: pacelf
