@@ -1,0 +1,69 @@
+# To add fields, make a new schema file in this directory
+# and change the schema setting in _config.yml to its name
+dataset_fields:
+  - field_name: title
+    label: Resource Title
+    datajson: title
+  - field_name: organization
+    label: Organisation
+    datajson: authors
+  - field_name: PacELF_ID
+    label: PacELF_ID
+    datajson: PacELF_ID
+  - field_name: type
+    label: Type
+    form_template: form/text.html
+    datajson: type
+  - field_name: category
+    label: Category
+    form_template: display/category.html
+    datajson: category
+  - field_name: hardcopy_location
+    label: Hardcopy Location
+    form_template: form/text.html
+    datajson: hardcopy_location
+  - field_name: description
+    label: Description
+    form_template: form/textarea.html
+    datajson: description
+  - field_name: year
+    label: Year
+    datajson: year
+  - field_name: authors
+    label: Authors
+    datajson: authors
+  - field_name: notes
+    label: Notes
+    datajson: notes
+
+
+resource_fields:
+  - field_name: name
+    label: Resource Title
+    datajson: title
+  - field_name: url
+    label: URL
+    datajson: pdf_file_name
+  - field_name: format
+    label: Format
+    datajson: type
+
+
+organization_fields:
+  - field_name: title
+    label: Title
+  - field_name: description
+    label: Description
+  - field_name: logo
+    label: Logo
+
+category_fields:
+  - field_name: name
+    label: Name
+  - field_name: logo
+    label: Logo
+  - field_name: logo_credit
+    label: Logo Credit
+  - field_name: featured
+    label: Featured on Homepage
+    form_template: form/checkbox.html

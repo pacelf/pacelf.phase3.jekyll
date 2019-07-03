@@ -1,0 +1,91 @@
+title: PacELF Digital Library
+greeting: PacELF - Pacific Programme for the Elimination of Lymphatic Filariasis
+description: ""
+baseurl: "" # When deploying to username github.io/jkan/ will need a /jkan/
+logo: /img/pacelf_logo.png
+
+# Site theme
+jkan_theme: United # this doesn't seem to activate the United Bootswatch theme so it's manually included as a style sheet in the head.html
+
+
+# Authentication
+github_client_id: 0ae0963ac3753d7c2fbf 
+gatekeeper_host: https://pacelf-gatekeeper.herokuapp.com/
+
+# Dataset schema
+schema: pacelf
+
+# Nav bar
+navigation:
+  - title: Documents
+    url: /datasets/
+  - title: Organizations
+    url: /organizations/
+  - title: About
+    url: /about.html
+
+# Collections
+collections:
+  datasets:
+    output: true
+    permalink: /datasets/:path/
+  organizations:
+    output: true
+    permalink: /organizations/:path/
+
+# Collections (cont'd)
+defaults:
+  - scope:
+      path: ""
+      type: datasets
+    values:
+      layout: dataset
+      category: Uncategorized
+      organization: N/A
+  - scope:
+      path: ""
+      type: organizations
+    values:
+      layout: organization
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Google Analytics
+google_analytics:
+  enabled: false
+  code: "UA-XXXXXX-1"
+
+# US Digital Analytics Program - https://analytics.usa.gov
+digital_analytics_program:
+  enabled: false
+  agency: ""
+  subagency: ""
+
+# Hypothesis.io - Annotator
+hypothesis:
+  enabled: false
+
+# Twitter
+twittercard:
+  enabled: false
+  username: "@"
+
+# Open Graph
+opengraph:
+  enabled: true
+
+# Exclude these files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .travis.yml
+  - node_modules
+  - scripts/src
+  - package.json
+  - webpack.config.js
+  - README.md
+  - LICENSE

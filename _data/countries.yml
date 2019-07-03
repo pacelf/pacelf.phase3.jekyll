@@ -1,0 +1,28 @@
+- name: Papua New Guinea
+  logo: /img/country-svg/pg.svg
+  logo_credit: Public Domain
+  featured: true
+- name: Samoa
+  logo: /img/country-svg/ws.svg
+  logo_credit: Public Domain
+  featured: true
+- name: French Polynesia
+  logo: /img/country-svg/pf.svg
+  logo_credit: Public Domain
+  featured: true
+- name: American Samoa
+  logo: /img/country-svg/as.svg
+  logo_credit: Public Domain
+  featured: true
+- name: Solomon Islands
+  logo: /img/country-svg/si.svg
+  logo_credit: Public Domain
+  featured: true
+- name: Fiji
+  logo: /img/country-svg/fj.svg
+  logo_credit: Public Domain
+  featured: true
+- name: Cook Islands
+  logo: /img/country-svg/ck.svg
+  logo_credit: Public Domain
+  featured: true

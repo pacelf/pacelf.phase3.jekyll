@@ -1,0 +1,26 @@
+---
+schema: pacelf
+title: 2nd Global Alliance for Elimination of Lymphatic Filariasis
+organization: World Health Organization
+notes: Hotel Taj Palace, New Delhi 2 -3 May 2002
+access: Restricted
+
+resources:
+- name: 2nd Global Alliance for Elimination of Lymphatic Filariasis
+  url: '/docs/contact_for_access.txt'
+  format: Hardcopy
+  access: Restricted
+  pages: N/A
+ 
+category: Meeting Reports
+access: Restricted
+journal: No journal available.
+publisher: World Health Organization
+language: English 
+tags: English 
+hardcopy_location: JCU WHOCC Ichimori collection
+work_location: Multicountry Global
+year: 2002
+decade: 2000
+PacELF_ID: 1547
+---
