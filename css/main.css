@@ -6,6 +6,15 @@
     width: 64px;
 }
 
+.text-muted a {
+    color: white;
+    /* text-decoration: underline; */
+}
+
+.navbar-text {
+    float: none;
+}
+
 .logos img {
     padding: 2em;
     width: auto;
