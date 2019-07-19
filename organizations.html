@@ -12,13 +12,13 @@ permalink: /organizations/
   <div class="media">
     <div class="media-left">
       {% if organization.logo and organization.logo != empty %}
-        <a href="{{ site.baseurl }}{{ organization.url }}" class="organization-thumbnail">
+        <a href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}" class="organization-thumbnail">
           <img class="media-object" src="{{ organization.logo }}" alt="{{ organization.title }}">
         </a>
       {% endif %}
     </div>
     <div class="media-body">
-      <h4 class="media-heading"><a href="{{ site.baseurl }}{{ organization.url }}">{{ organization.title }}</a></h4>
+      <h4 class="media-heading"><a href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}">{{ organization.title }}</a></h4>
       <p>{{ organization.description }}</p>
       <p><a href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}">{{ dataset_count }} datasets</a></p>
     </div>
