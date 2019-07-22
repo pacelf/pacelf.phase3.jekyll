@@ -1,7 +1,6 @@
 # PacELF Digital Library
 
 [![license][license-image]][license-url]
-[![Build Status][travis-image]][travis-url]
 
 A static site for storing and searching the [PacELF project's](http://www.wpro.who.int/southpacific/pacelf/en/) digital library of documents.
 
@@ -122,5 +121,3 @@ As requested, it sends monthly audience overview emails to `steve.vandervalk@gma
 ---
 [license-image]: https://img.shields.io/badge/license-MIT-green.svg
 [license-url]: https://github.com/jcu-eresearch/pacelf-digital-library/blob/master/LICENSE
-[travis-image]: https://travis-ci.org/stevevandervalk/jkan.svg?branch=netlify
-[travis-url]: https://travis-ci.org/stevevandervalk/jkan
