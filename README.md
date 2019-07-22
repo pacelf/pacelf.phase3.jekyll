@@ -103,7 +103,19 @@ htmlproofer ./_site
 
 Currently built using [Jekyll](https://github.com/jekyll/jekyll) via the [JKAN](https://github.com/timwis/jkan) project.
 
-TODO: Add JKAN links
+#### JKAN Links
+
+JKAN is organised in a particular way to suit it's usecase and it is helpful to understand before making changes.  The [architecture and development of it is documented here](https://github.com/timwis/jkan/wiki/Architecture).
+
+### Analytics
+
+Per PacELF project's request, Google Analytics is loaded into the site to count viewers.
+
+It is currently stored under `steve.vandervalk@gmail.com` Google Analytics account.
+
+#### Recurring Reports
+
+As requested, it sends monthly audience overview emails to `steve.vandervalk@gmail.com` which are forwarded to Patricia Graves as the PacELF project owner.
 
 ## Maintainers
 
