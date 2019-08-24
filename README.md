@@ -64,6 +64,44 @@ npm run build
 
 View `package.json` for more commands and details.
 
+### Updating datasets
+
+Currently this codebase requires the `.xml`, `.txt` and `.pdf` documents to be provided in the `docs` folder.  
+The `xml` documents contain the information about documents curated by the PacELF project, the `.txt` contains information about the availability of the document itself and the `.pdf` is the document referenced.
+
+#### Process to obtain XML documents
+
+Currently there is a spreadsheet which is maintained by the PacELF project.
+The spreadsheet is converted into `.xml` documents via a Python script.
+
+TODO: Test this process and confirm which one actually works with Daniel
+
+### Producing markdown document for each XML document
+
+Once the XML documents are in located in `docs/` you can install the Python dependencies in `requirements.txt` or `Pipfile` using your preferred tool.
+
+e.g.
+
+```shell
+pip3 install -r requirements.txt
+```
+
+or
+
+```shell
+Pipenv install
+```
+
+Then you can run the script
+
+```shell
+python3 convert-xml-to-md.py
+```
+
+With luck it will populate the `_datasets/` folder with the original markdown output of each XML document.
+
+
+
 #### Deployments via GitHub
 
 The site is deployed by GitHub Pages to [https://pacelf.github.io/](https://pacelf.github.io/)
@@ -114,7 +152,7 @@ It is currently stored under `steve.vandervalk@gmail.com` Google Analytics accou
 
 #### Recurring Reports
 
-As requested, it sends monthly audience overview emails to `steve.vandervalk@gmail.com` which are forwarded to Patricia Graves as the PacELF project owner.
+As requested, it sends monthly audience overview emails to `steve.vandervalk@gmail.com` which are forwarded to Patricia Graves (patricia.graves@jcu.edu.au) as the PacELF project owner.
 
 ## Maintainers
 
