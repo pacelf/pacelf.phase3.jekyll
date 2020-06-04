@@ -6,10 +6,23 @@ A static site for storing and searching the [PacELF project's](http://www.wpro.w
 
 ## Prerequisites
 
-To install this project, you'll need the following things installed on your machine.
+To install this project, you'll need the following system-level requirements installed on a macOS platform.
 
 1. [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 2. [NodeJS](http://nodejs.org)
+
+You will require the [Homebrew](https://brew.sh/) package manager. Once you have brew installed, run the following command:
+
+```shell
+brew install node
+```
+
+To install ruby, run the following:
+
+```shell
+rvm install ruby 2.7
+gem install bundler
+```
 
 ## Local Installation
 
