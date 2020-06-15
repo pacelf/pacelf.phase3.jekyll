@@ -18,7 +18,7 @@
 # Note the program assumes there is a header row in the CSV file. It skips processesing the first row.
 
 #
-# new example: python ./scripts/csvColumnToXMLFile.py "./rawdata/excel/PacELF Phases 1_2_3 13Dec2018.csv" "/Users/pvrdwb/projects/PacELFDocs/PacELFphase3/" ./docs --location="HardcopyLocation2018"
+# new example: python ./scripts/csvColumnToXMLFile.py "./rawdata/excel/PacELF Phases 1_2_3 13Dec2018.csv" "/Users/pvrdwb/projects/PacELFDocs/PacELFphase3/" ../docs --location="HardcopyLocation2018"
 #
 # old example: python csvColumnToXMLFile.py  rawSpreadsheet/PacELF_Phase_1_AND_2.csv  ~/projects/PacELFDocs/PacELF\ PDFs  ./docs
 #
@@ -212,7 +212,7 @@ with open(args.metadata_csv, "rb") as csvfile:
                     [
                         'The document "',
                         doc_title,
-                        '" is restricted due to data sensitivity. ',
+                        '" is unavailable due to data sensitivity, publisher restrictions or is not digitised. ',
                         "Please e-mail pacelf@jcu.edu.au or write to:\n\n    ",
                         get_location_info(hc_location),
                         "\n\nto negotiate gaining access to this item.",
@@ -230,7 +230,7 @@ with open(args.metadata_csv, "rb") as csvfile:
                     [
                         'The document "',
                         doc_title,
-                        '" is restricted due to data sensitivity. ',
+                        '" is unavailable due to data sensitivity, publisher restrictions or is not digitised. ',
                         "Please e-mail pacelf@jcu.edu.au to negotiate gaining access to this item.",
                     ]
                 )
@@ -272,7 +272,7 @@ with open(args.metadata_csv, "rb") as csvfile:
                     [
                         'The document "',
                         doc_title,
-                        '" is restricted due to data sensitivity. ',
+                        '" is unavailable due to data sensitivity, publisher restrictions or is not digitised. ',
                         "Please e-mail pacelf@jcu.edu.au to negotiate gaining access to this item.",
                     ]
                 )

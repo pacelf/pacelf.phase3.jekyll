@@ -18,7 +18,8 @@ journal: The American Journal of Tropical Medicine and Hygiene
 publisher: No publisher available. 
 language: English 
 tags: English 
-hardcopy_location: WHO Geneva; JCU WHOCC Ichimori collection; JCU WHOCC
+hardcopy_location: WHO Geneva; JCU WHOCC Ichimori collection;
+JCU WHOCC
 work_location: Multicountry Global
 year: 2004
 decade: 2000

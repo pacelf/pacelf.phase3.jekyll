@@ -7,7 +7,7 @@ access: Restricted
 
 resources:
 - name: MDA coverage survey in the Northern division analysis
-  url: '/docs/contact_for_access.txt'
+  url: '/docs/PacELF_3124_PacELF_3124_MOHMS_Fiji_2006_MDA_coverage_survey_report.txt'
   format: Electronic
   access: Restricted
   pages: 6

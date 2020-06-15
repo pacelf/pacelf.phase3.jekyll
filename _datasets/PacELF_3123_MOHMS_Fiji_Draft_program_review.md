@@ -7,7 +7,7 @@ access: Restricted
 
 resources:
 - name: Brief review of Fiji Filariasis Program 2002-2006 
-  url: '/docs/contact_for_access.txt'
+  url: '/docs/PacELF_3123_MOHMS_Fiji_Draft_program_review.txt'
   format: Electronic
   access: Restricted
   pages: 15
