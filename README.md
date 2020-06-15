@@ -17,7 +17,7 @@ You will require the [Homebrew](https://brew.sh/) package manager. Once you have
 brew install node
 ```
 
-To install ruby, run the following:
+To install ruby, run the following (assumes a [RVM](https://rvm.io) install):
 
 ```shell
 rvm install ruby 2.7
@@ -113,8 +113,6 @@ python3 convert-xml-to-md.py
 
 With luck it will populate the `_datasets/` folder with the original markdown output of each XML document.
 
-
-
 #### Deployments via GitHub
 
 The site is deployed by GitHub Pages to [https://pacelf.github.io/](https://pacelf.github.io/)
@@ -155,7 +153,7 @@ Currently built using [Jekyll](https://github.com/jekyll/jekyll) via the [JKAN](
 
 #### JKAN Links
 
-JKAN is organised in a particular way to suit it's usecase and it is helpful to understand before making changes.  The [architecture and development of it is documented here](https://github.com/timwis/jkan/wiki/Architecture).
+JKAN is organised in a particular way to suit it's usecase and it is helpful to understand before making changes. The [architecture and development of it is documented here](https://github.com/timwis/jkan/wiki/Architecture).
 
 ### Analytics
 
@@ -170,5 +168,6 @@ As requested, it sends monthly audience overview emails to `steve.vandervalk@gma
 ## Maintainers
 
 ---
+
 [license-image]: https://img.shields.io/badge/license-MIT-green.svg
 [license-url]: https://github.com/jcu-eresearch/pacelf-digital-library/blob/master/LICENSE
