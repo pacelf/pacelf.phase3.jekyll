@@ -84,10 +84,9 @@ The `xml` documents contain the information about documents curated by the PacEL
 
 #### Process to obtain XML documents
 
-Currently there is a spreadsheet which is maintained by the PacELF project.
-The spreadsheet is converted into `.xml` documents via a Python script.
-
-TODO: Test this process and confirm which one actually works with Daniel
+A spreadsheet is manintained by the PacELF project and a snapshot of any new/updated entries are received by eResearch via email when made available by the PacELF team. 
+Spreadsheet in this repo `/PacELF_Phase3/rawdata/excel/PacELF Phases 1_2_3 13Dec2018.xlsx` is updated with the new and admended entries.
+Convert updated spreadsheet to `.xml` documents via Python script `/PacELF_Phase3/scripts/csvColumnToXMLFile.py`.
 
 ### Producing markdown document for each XML document
 
