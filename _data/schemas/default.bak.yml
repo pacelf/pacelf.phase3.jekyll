@@ -7,10 +7,7 @@ dataset_fields:
   - field_name: organization
     label: Organization
     form_template: form/organization.html
-    datajson: authors
-  - field_name: journal
-    label: Journal
-    datajson: journal
+    datajson: publisher.name
   - field_name: notes
     label: Description
     form_template: form/textarea.html
@@ -18,26 +15,18 @@ dataset_fields:
   - field_name: license
     label: License
     form_template: form/license.html
-    datajson: resource.access
+    datajson: license
   - field_name: category
     label: Category
     form_template: form/category.html
-    datajson: type
-  - field_name: format
-    label: Format
-    datajson: format
-  - field_name: publisher
-    label: Publisher
-    datajson: publisher
-  - field_name: language
-    label: Language
-    datajson: language
-  - field_name: year
-    label: Year Published
-    datajson: Year
-  - field_name: decade
-    label: Decade of the Work
-    datajson: decade
+    display_template: display/category.html
+    datajson: category
+  - field_name: maintainer
+    label: Maintainer
+    datajson: contactPoint.fn
+  - field_name: maintainer_email
+    label: Maintainer Email
+    datajson: contactPoint.hasEmail
 
 resource_fields:
   - field_name: name
@@ -46,10 +35,6 @@ resource_fields:
   - field_name: url
     label: URL
     datajson: distribution.downloadURL
-  - field_name: license
-    label: License
-    form_template: form/license.html
-    datajson: distribution.access
   - field_name: format
     label: Format
     datajson: distribution.format
@@ -64,10 +49,6 @@ resource_fields:
       - kmz
       - shp
       - xml
-      - pdf
-      - txt
-      - Electronic
-      - Hardcopy
 
 organization_fields:
   - field_name: title

@@ -13,14 +13,14 @@ github_client_id: a3459f05502c1381d12a
 gatekeeper_host: https://pacelf-login-server.herokuapp.com/
 
 # Dataset schema
-schema: pacelf
+schema: default # replaced the contents of default with pacelf schema file
 
 # Nav bar
 navigation:
   - title: Documents
     url: /datasets/
-  - title: Organizations
-    url: /organizations/
+  # - title: Organizations
+  #   url: /organizations/
   - title: About
     url: /about.html
 

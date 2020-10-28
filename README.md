@@ -84,7 +84,7 @@ The `xml` documents contain the information about documents curated by the PacEL
 
 #### Process to obtain XML documents
 
-A spreadsheet is manintained by the PacELF project and a snapshot of any new/updated entries are received by eResearch via email when made available by the PacELF team. 
+A spreadsheet is maintained by the PacELF project and a snapshot of any new/updated entries are received by eResearch via email when made available by the PacELF team. 
 Spreadsheet in this repo `/PacELF_Phase3/rawdata/excel/PacELF Phases 1_2_3 13Dec2018.xlsx` is updated with the new and admended entries.
 Convert updated spreadsheet to `.xml` documents via Python script `/PacELF_Phase3/scripts/csvColumnToXMLFile.py`.
 
@@ -171,8 +171,6 @@ It is currently stored under `steve.vandervalk@gmail.com` Google Analytics accou
 #### Recurring Reports
 
 As requested, it sends monthly audience overview emails to `steve.vandervalk@gmail.com` which are forwarded to Patricia Graves (patricia.graves@jcu.edu.au) as the PacELF project owner.
-
-## Maintainers
 
 ---
 [license-image]: https://img.shields.io/badge/license-MIT-green.svg

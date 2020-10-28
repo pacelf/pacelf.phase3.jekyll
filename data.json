@@ -7,6 +7,9 @@
     {% assign dataset_fields = site.data.schemas[schema].dataset_fields %}
     {% assign resource_fields = site.data.schemas[schema].resource_fields %}
 
+    {% assign f_journal = dataset_fields | where: "datajson", "journal" | first %}
+    {% assign journal = dataset[f_journal[field_name]] %}
+
     {% assign f_title = dataset_fields | where: "datajson", "title" | first %}
     {% assign title = dataset[f_title[field_name]] %}
 

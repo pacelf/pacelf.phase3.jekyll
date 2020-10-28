@@ -4,7 +4,7 @@ layout: default
 {% include breadcrumbs.html parent="Datasets" %}
 {% assign schema = page.schema | default: site.schema %}
 {% assign dataset_fields = site.data.schemas[schema].dataset_fields %}
-{% assign dataset_system_fields = "title|organization|notes|license" | split: "|" %}
+{% assign dataset_system_fields = "title|organization|journal|notes|license" | split: "|" %}
 {% assign resource_fields = site.data.schemas[schema].resource_fields %}
 {% assign resource_system_fields = "name|url|format|description" | split: "|" %}
 

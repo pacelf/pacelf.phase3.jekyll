@@ -5,6 +5,10 @@ export default (data) => (
   ${data.organization || ''}
   </em>
   </p>
+  <em>
+  ${data.journal || ''}
+  </em>
+  </p>
   ${data.notes || ''}
 </dataset>`
 )
