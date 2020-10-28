@@ -1,0 +1,40 @@
+### Must paste this into Excel as a single line, without returns
+
+="<?xml version='1.0' encoding='UTF-8'?><rdsi.pacelf:document xmlns:rdsi.pacelf='http://www.example.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' >"&IF(A2 <> "","<PacELF_ID>"&A2&"</PacELF_ID>","")&IF(B2 <> "","<type>"&B2&"</type>","")&IF(C2 <> "","<category>"&C2&"</category>","")&IF(D2 <> "","<hardcopy_location>"&D2&"</hardcopy_location>","")&IF(E2 <> "","<title>"&E2&"</title>","")&IF(F2 <> "","<description>"&F2&"</description>","")&IF(G2 <> "","<year>"&G2&"</year>","")&IF(H2 <> "","<authors>"&H2&"</authors>","")&IF(I2 <> "","<journal>"&I2&"</publisher>","")&IF(J2 <> "","<volume-issue>"&J2&"</volume-issue>","")&IF(K2 <> "","<pages>"&K2&"</pages>","")&IF(L2 <> "","<work_location>"&L2&"</work_location>","")&IF(M2 <> "","<access_rights>"&M2&"</access_rights>","")&IF(N2 <> "","<language>"&N2&"</language>","")&IF(O2 <> "","<publisher>"&O2&"</publisher>","")&IF(P2 <> "","<access_rights>"&P2&"</access_rights>","")&IF(Q2 <> "","<pdf_file_namer>"&Q2&"</pdf_file_name>","")&IF(R2 <> "","<decade>"&R2&"</decade>","")&"</rdsi.pacelf:document>"
+
+
+### this is the formula Daniel is using for PacELF phase 3
+### NOTES:
+### - assumes the last four digits of the date column are a year
+### - replaces & with &amp; and < with &lt; in the description
+### - replaces & with &amp; in lots of other fields
+
+# edit this one, and copy-paste it below before joining up all the lines
+
+="<?xml version='1.0' encoding='UTF-8'?><rdsi.pacelf.phase3:document xmlns:rdsi.pacelf.phase3='http://www.example.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' >"
+&IF(trim(A2) <> "","<PacELF_ID>"&A2&"</PacELF_ID>","")
+&IF(trim(E2) <> "","<type>"&E2&"</type>","")
+&IF(trim(G2) <> "","<category>"&G2&"</category>","")
+&IF(trim(D2) <> "","<hardcopy_location>"&D2&"</hardcopy_location>","")
+&IF(trim(H2) <> "","<title>"&substitute(H2, "&", "&amp;")&"</title>","")
+&IF(trim(K2) <> "","<description>"&substitute(substitute(K2, "&", "&amp;"), "<", "&lt;")&"</description>","")
+&IF(trim(J2) <> "","<year>"&right(J2,4)&"</year>","")
+&IF(trim(I2) <> "","<authors>"&substitute(I2, "&", "&amp;")&"</authors>","")
+&IF(trim(L2) <> "","<journal>"&substitute(L2, "&", "&amp;")&"</journal>","")
+&IF(trim(M2) <> "","<volume-issue>"&M2&"</volume-issue>","")
+&IF(trim(N2) <> "","<pages>"&N2&"</pages>","")
+&IF(trim(F2) <> "","<work_location>"&F2&"</work_location>","")
+&IF(trim(T2) <> "","<language>"&T2&"</language>","")
+&IF(trim(O2) <> "","<publisher>"&substitute(O2, "&", "&amp;")&"</publisher>","")
+&IF(trim(P2) <> "","<access_rights>"&P2&"</access_rights>","")
+&IF(trim(V2) <> "","<pdf_file_name>"&substitute(V2, "&", "&amp;")&"</pdf_file_name>","")
+&"<decade>" & if(isblank(j2),"unspecified",left(right(J2, 4),3)&"0")&"</decade>"
+&"</rdsi.pacelf.phase3:document>"
+
+
+
+="<?xml version='1.0' encoding='UTF-8'?><rdsi.pacelf.phase3:document xmlns:rdsi.pacelf.phase3='http://www.example.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' >"&IF(trim(A2) <> "","<PacELF_ID>"&A2&"</PacELF_ID>","")&IF(trim(E2) <> "","<type>"&E2&"</type>","")&IF(trim(G2) <> "","<category>"&G2&"</category>","")&IF(trim(D2) <> "","<hardcopy_location>"&D2&"</hardcopy_location>","")&IF(trim(H2) <> "","<title>"&substitute(H2, "&", "&amp;")&"</title>","")&IF(trim(K2) <> "","<description>"&substitute(substitute(K2, "&", "&amp;"), "<", "&lt;")&"</description>","")&IF(trim(J2) <> "","<year>"&right(J2,4)&"</year>","")&IF(trim(I2) <> "","<authors>"&substitute(I2, "&", "&amp;")&"</authors>","")&IF(trim(L2) <> "","<journal>"&substitute(L2, "&", "&amp;")&"</journal>","")&IF(trim(M2) <> "","<volume-issue>"&M2&"</volume-issue>","")&IF(trim(N2) <> "","<pages>"&N2&"</pages>","")&IF(trim(F2) <> "","<work_location>"&F2&"</work_location>","")&IF(trim(T2) <> "","<language>"&T2&"</language>","")&IF(trim(O2) <> "","<publisher>"&substitute(O2, "&", "&amp;")&"</publisher>","")&IF(trim(P2) <> "","<access_rights>"&P2&"</access_rights>","")&IF(trim(V2) <> "","<pdf_file_name>"&substitute(V2, "&", "&amp;")&"</pdf_file_name>","")&"<decade>" & if(isblank(j2),"unspecified",left(right(J2, 4),3)&"0")&"</decade>"&"</rdsi.pacelf.phase3:document>"
+
+
+
+

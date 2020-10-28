@@ -1,5 +1,5 @@
 
-_site/
+# _site/ # this is no longer the case as serving GitHub Pages from _site/
 
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
