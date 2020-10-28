@@ -90,7 +90,7 @@ Convert updated spreadsheet to `.xml` documents via Python script `/PacELF_Phase
 
 ### Producing markdown document for each XML document
 
-Once the XML documents are in located in `docs/` you can install the Python dependencies in `requirements.txt` or `Pipfile` using your preferred tool.
+Once the XML documents are in located in `docs/` you can install the Python dependencies in `requirements.txt` using your preferred tool.
 
 e.g.
 
@@ -98,11 +98,6 @@ e.g.
 pip3 install -r requirements.txt
 ```
 
-or
-
-```shell
-Pipenv install
-```
 
 Then you can run the script
 
@@ -118,11 +113,22 @@ With luck it will populate the `_datasets/` folder with the original markdown ou
 
 The site is deployed by GitHub Pages to [https://pacelf.github.io/](https://pacelf.github.io/)
 
-Changes can be made to deployed site by making changes to the [GitHub repository](https://github.com/pacelf/pacelf.github.io) `master` branch via:
+*NOTE*
+Changes can be made to deployed site by making changes to the [GitHub repository](https://github.com/pacelf/pacelf.github.io) `gh-pages` branch. The easiest workflow is:
 
-```shell
-git push
+```bash
+bundle exec jekyll build
 ```
+
+Copy the contents of `_site/`.
+
+Switch to the `gh-pages` branch:
+
+```bash
+git checkout gh-pages
+```
+
+Replace the existing content, git commit and push in whatever way you like.
 
 ## Tests
 
