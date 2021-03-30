@@ -9,7 +9,7 @@ license = "MIT"
 python = "^3.8"
 black = "^20.8b1"
 loguru = "^0.5.3"
-jinja2 = "^2.11.2"
+jinja2 = "^2.11.3"
 
 [tool.poetry.dev-dependencies]
 
